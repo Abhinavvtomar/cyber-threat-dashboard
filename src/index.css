@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ✅ Custom Font */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* ✅ Glow Animation */
+@keyframes pulseGlow {
+  0% { opacity: 0.2; }
+  50% { opacity: 0.4; }
+  100% { opacity: 0.2; }
+}
+
+.glow {
+  animation: pulseGlow 4s infinite;
+}
